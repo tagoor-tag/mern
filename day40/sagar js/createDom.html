@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function createDiv() {
+            var divDomElement = document.createElement("div");
+            divDomElement.innerText = "I am JS, easy to understand";
+            console.log(divDomElement);
+
+            //image
+            var imageDomElement = document.createElement("img");
+            imageDomElement.src =
+                "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1";
+            imageDomElement.width = "300";
+            imageDomElement.height = "300";
+
+            var bodyDomElement = document.querySelector("body");
+            bodyDomElement.appendChild(divDomElement);
+            bodyDomElement.appendChild(imageDomElement);
+        }
+    </script>
+</head>
+
+<body>
+    <h2 class="heading">DOM Manipulation</h2>
+    <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi quae odit at, totam ipsam magnam quasi
+        deserunt sed molestiae itaque consectetur numquam error aliquam ipsum consequatur vel voluptatum magni. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur minima. Vel deserunt numquam nisi cumque
+        tempora, ducimus suscipit voluptates neque et sint. Odit, doloremque earum labore ipsam ut neque?
+    </p>
+
+    <button onclick="createDiv()">Submit</button>
+
+</body>
+
+</html>

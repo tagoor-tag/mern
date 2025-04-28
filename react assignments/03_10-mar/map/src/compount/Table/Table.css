@@ -1,0 +1,15 @@
+#table-Compound{
+    width: 100%;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+#table-Compound table{
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+#table-Compound table td{
+    padding: 5px 10px;
+    text-align: center;
+}

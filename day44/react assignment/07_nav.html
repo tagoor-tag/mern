@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+
+    <script>
+        var nav = React.createElement("nav", null, [
+            React.createElement("h1", null, "Website Navigation"),
+            React.createElement("ul",null, [
+                React.createElement("li",null,[
+                    React.createElement("a",{ href: "#home"},"Home")
+                ]),
+                React.createElement("li",null,[
+                    React.createElement("a",{ href: "#about"},"About")
+                ]),
+                React.createElement("li",null,[
+                    React.createElement("a",{ href: "#services"},"Services")
+                ]),
+                React.createElement("li",null,[
+                    React.createElement("a",{ href: "#contact"},"Contact")
+                ])
+            ])
+        ]);
+
+        ReactDOM.render(nav, document.querySelector("body"))
+    </script>
+</body>
+
+</html>

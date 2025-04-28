@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <style>
+        body{
+           margin: 0;
+           /* justify-content: center;
+           align-items: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+
+    </div>
+
+    <script>
+        var nav = React.createElement("nav",
+            { style:{color: "coral",display: "flex" , backgroundColor:"black", fontFamily: "cursive" , justifyContent: "center", alignItems: "center"}}, 
+            [
+            React.createElement("h1", null, "Website Navigation"),
+            React.createElement("ul", {type: "none" , style: { display: "flex",gap: "10px" , justifyContent: "center", alignItems: "center" }}, [
+                React.createElement("li", null, [
+                    React.createElement("a", { href: "#home", style: { textDecoration: "none" } } , "Home" )
+                ]),
+                React.createElement("li", null, [
+                    React.createElement("a", { href: "#about", style: { textDecoration: "none" } }, "About")
+                ]),
+                React.createElement("li", null, [
+                    React.createElement("a", { href: "#services", style: { textDecoration: "none" } }, "Services")
+                ]),
+                React.createElement("li", null, [
+                    React.createElement("a", { href: "#contact", style: { textDecoration: "none" } }, "Contact")
+                ])
+            ])
+        ]);
+
+        ReactDOM.render(nav, document.getElementById("nav"))
+    </script>
+</body>
+
+</html>

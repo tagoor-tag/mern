@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            var img = document.createElement("img");
+            img.src = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg";
+            img.width = "200";
+            img.height = "100";
+            document.querySelector("body").appendChild(img);
+            
+            
+        }
+        function f2(){
+            document.querySelector("h1").innerText="changing java script";
+            document.querySelector("h1").style.color ="blue";
+
+        }
+        function f3(){
+            document.querySelector("h1").innerText="this is double click event";
+            document.querySelector("h1").style.color ="blue";
+        }
+        function f4(a,b){
+            let a,b
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Welcome to javascript</h1>
+    <button onclick="f1()" ondblclick="f3()">create image</button>
+    <button onclick="f2()">change heading</button>
+</body>
+</html>

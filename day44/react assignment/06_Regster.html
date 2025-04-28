@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+
+    <script>
+        var div = React.createElement("div", null, [
+            React.createElement("h1", null, "Register"),
+            React.createElement("form", null, [
+                React.createElement("label", { for: "username" }, "Username:"),
+                React.createElement("input", { type: "text", id: "username" }),
+                React.createElement("label", { for: "email" }, "Email:"),
+                React.createElement("input", { type: "email", id: "email" }),
+                React.createElement("button", { type: "submit" }, "Submit")
+            ])
+        ]);
+
+        ReactDOM.render(div, document.querySelector("body"));
+    </script>
+</body>
+
+</html>

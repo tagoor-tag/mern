@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    width: 100%;
+    /* background-image: url("daylight-environment-forest-459225.jpg"); */ 
+    background-image: url("./photo-1590523278191-995cbcda646b.jpeg");
+    /* object-fit:cover !important; */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 100vw;
+    height: 100%;
+}

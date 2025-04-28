@@ -1,0 +1,55 @@
+#header-div{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+#header-div #header-logo{
+    padding-left: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+#header-div #header-logo h4{
+    font-size: x-large;
+}
+
+
+#header-div #header-logo #header-logo-img,#header-profile-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#header-div #header-profile{
+    padding-right: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#header-div #header-profile h4{
+    font-size: x-large;
+}
+
+#header-div #header-profile button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+#header-div #header-profile button i{
+    font-size: 30px;
+    color: white;
+}

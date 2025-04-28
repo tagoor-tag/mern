@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment04</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            padding: 10px;
+            background-color: darkgreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav button{
+            padding: 10px 20px;
+            background-color: yellowgreen;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function Header() {
+            return (
+                <nav>
+                    <h2>ADRMIRO</h2>
+
+                    <ul type="none">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#application">Application</a></li>
+                        <li><a href="#corefreature">Core Freature</a></li>
+                        <li><a href="#documentaion">Documentaion</a></li>
+                        <li><a href="#hireus">Hire US</a></li>
+                    </ul>
+
+                    <button>Buy Now</button>
+                </nav>
+            );
+        }
+
+        ReactDOM.render(<Header />, document.querySelector("body"));
+    </script>
+</body>
+
+</html>

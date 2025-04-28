@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeList(){
+            var li1 = document.getElementById("html");
+            li1.innerText = "Csharp";
+
+            var li2 = document.getElementById("css");
+            li2.innerText = "Asp.net MVC Core"
+        }
+
+        function f1(){
+            var li1 = document.getElementById("html");
+            li1.innerText = "html";
+
+            var li2 = document.getElementById("css");
+            li2.innerText = "css"
+        }
+    </script>
+</head>
+<body>
+    <ol onmouseenter="changeList()" onmouseleave="f1()">
+        <li id="html">html</li>
+        <li id="css">CSS</li>
+    </ol>
+</body>
+</html>

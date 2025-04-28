@@ -1,0 +1,28 @@
+#allfeedbacks{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#allfeedbacks table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#allfeedbacks th,td{
+    padding: 7px 7px;
+    text-align: center;
+}
+
+#allfeedbacks tbody tr td button{
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    color: white;
+    background-color: mediumseagreen;
+    border-radius: 10px;
+}

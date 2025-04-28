@@ -1,0 +1,20 @@
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(101, 21, 172);
+}
+
+button:last-child{
+    background-color: purple;
+
+}

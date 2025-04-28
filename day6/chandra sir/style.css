@@ -1,0 +1,44 @@
+body{
+    width: 100%;
+}
+
+h1{
+
+    color: rgb(255, 119, 0);
+    border: 5px solid black;
+    width: fit-content;
+    
+    
+    
+}
+h2{
+    
+
+    color: rgb(13, 255, 0);
+    border: 5px solid black;
+    width: fit-content;
+    margin-left: 1500px;
+    margin-top: ;
+    
+    
+    
+   
+}
+h3{
+
+    color: rgb(0, 136, 255);
+    border: 5px solid black;
+    width: fit-content;
+    margin-top: 700px;
+}
+h4{
+
+    color: rgb(255, 0, 170);
+    border: 5px solid black;
+    width: fit-content;
+    margin-left: 1500px;
+
+    
+}
+
+

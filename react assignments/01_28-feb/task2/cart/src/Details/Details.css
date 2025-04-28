@@ -1,0 +1,12 @@
+.details-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details{
+    text-align: center;
+}
+
+.details h1{
+    color: rgb(159, 44, 159);
+}

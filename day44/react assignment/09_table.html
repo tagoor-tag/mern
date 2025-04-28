@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body id="body">
+
+    <script>
+        var div = React.createElement("div", null, [
+            React.createElement("h2", null, "Student Grades"),
+            React.createElement("table", { border: "1" }, [
+                React.createElement("thead", null, [
+                    React.createElement("tr", null, [
+                        React.createElement("th", null, "Name"),
+                        React.createElement("th", null, "Grade")
+                    ])
+                ]),
+                React.createElement("tbody", null, [
+                    React.createElement("tr", null, [
+                        React.createElement("td", null, "John Deo"),
+                        React.createElement("td", null, "A")
+                    ]),
+                    React.createElement("tr", null, [
+                        React.createElement("td", null, "Jane Smith"),
+                        React.createElement("td", null, "B")
+                    ]),
+                    React.createElement("tr", null, [
+                        React.createElement("td", null, "Emily Davis"),
+                        React.createElement("td", null, "A")
+                    ])
+                ])
+            ])
+        ]);
+
+        ReactDOM.render(div,  document.getElementById("body"));
+    </script>
+</body>
+
+</html>

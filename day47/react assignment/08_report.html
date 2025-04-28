@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment05</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(154, 255, 221);
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #message {
+            text-decoration: none;
+            height: 200px;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+        }
+        .div2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .div2 input{
+            width: 49%;
+        }
+
+        .div1 button{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            width: fit-content;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function Report() {
+            return (
+                <div class="div1">
+                    <h3>Write A Review</h3>
+                    <textarea name="message" id="message" placeholder="Messages"></textarea>
+                    <input list="browsers" name="browser" id="browser" placeholder="Choose Ratting" />
+                    <datalist id="browsers" >
+                        <option value="5" />
+                        <option value="4" />
+                        <option value="3" />
+                        <option value="2" />
+                        <option value="1" />
+                    </datalist>
+                    <div class="div2">
+                        <input type="text" placeholder="Your Name" />
+                        <input type="email" placeholder="Your Email" />
+                    </div>
+                    <button>Submit Review</button>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<Report />, document.querySelector("body"))
+    </script>
+</body>
+
+</html>

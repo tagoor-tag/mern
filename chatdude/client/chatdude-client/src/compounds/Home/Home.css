@@ -1,0 +1,11 @@
+#home-page{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+#home-page #home-area{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}

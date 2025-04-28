@@ -1,0 +1,52 @@
+#signin-form {
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+#signin-form form {
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Glassmorphic effect */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#signin-form #title-signin h1, h3{
+    color: white;
+    text-align: center;
+}
+
+#signin-form form input {
+    width: 356px;
+    border: none;
+    outline: none;
+    padding: 0.6em 0em 0.6em 0.7em;
+    font-size: 1em;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+#signin-form form #submit-signin input {
+    padding: 0.6em;
+    color: rgb(0, 42, 255);
+    background: white;
+    width: fit-content;
+}
+
+#signin-form #link-to-signup{
+    color: white;
+}

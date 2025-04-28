@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment01</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+        #head h1,
+        p {
+            font-size: small;
+        }
+
+        #head {
+            text-align: center;
+
+        }
+
+        .cart {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: large;
+        }
+
+        .cart img {
+            border-radius: 10px;
+        }
+
+
+        .cartContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function CreateFnComp() {
+            return (
+                <div id="head">
+                    <h1>Find By Locations</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vero debitis aut minima quasi cupiditate voluptas commodi <br /> nihil natus eligendi illo, facilis nulla molestias cum, possimus temporibus, saepe laborum unde.</p>
+                </div>
+            );
+        }
+
+        function Cart(props) {
+            return (
+                <div class="cart">
+                    <img src={props.url} alt="img" width="100%" height="200px" />
+                    <p><b>{props.cityname}</b></p>
+                    <p>{props.properties}</p>
+                    <button><i class="bi bi-caret-right-fill"></i></button>
+                </div>
+            );
+        }
+
+        function Call() {
+            return (
+                <div class="cartContainer">
+                    <Cart
+                        url={"https://i.redd.it/247p7tg9khp71.jpg"} cityname={"San Francisco, California"} properties={"95 Properties"} />
+
+                    <Cart url={"https://static.propsearch.ae/dubai-locations/california-2-by-samana_ssoTq_xl.jpg"} cityname={"Dunao, California"} properties={"95 Properties"} />
+
+                    <Cart url={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlz7s9UbqGrfJRTzNVRJh4_aWDwu_QFC0KCQ&s"} cityname={"Liverpool, London"} properties={"95 Properties"} />
+
+                    <Cart url={"https://imageio.forbes.com/i-forbesimg/media/lists/places/new-york-ny_416x416.jpg?format=jpg&height=416&width=416&fit=bounds"} cityname={"San Franciso, New York"} properties={"95 Properties"} />
+                </div>
+            );
+        }
+
+
+        ReactDOM.render([<CreateFnComp />, <Call />], document.querySelector("body"))
+
+
+    </script>
+</body>
+
+</html>

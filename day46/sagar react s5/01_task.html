@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        #card {
+            width: 230px;
+            height: 380px;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        var cart = (
+            <div id="card">
+                <img src="https://th.bing.com/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain" alt="img"
+                    width="100%"
+                    height="200" />
+                <h3>Tagoor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi vitae similique</p>
+                <button>Profile Details</button>
+            </div>
+        )
+
+        var container = (
+            <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+                {cart} {cart} {cart} {cart}
+            </div>
+        )
+
+        ReactDOM.render(container, document.getElementById("root"));
+    </script>
+</body>
+
+</html>

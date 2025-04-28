@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function showInputInP(){
+        var inputDomElement = document.querySelector("input");
+
+        var pDomElement = document.getElementById("username");
+        
+        var textBoxData = inputDomElement.value;
+
+        pDomElement.innerText = textBoxData;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2>task</h2>
+    <input type="text" placeholder="username">
+    <button onclick="showInputInP()">Submit</button>
+
+    <p id="username"></p>
+</body>
+
+</html>

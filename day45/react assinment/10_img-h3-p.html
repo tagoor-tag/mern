@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    
+    <script type="text/babel">
+        var div = (<div style = {{width: "220px", height: "460px", borderBox: "0 0 10px black"}}>
+                <img src="https://images.stockcake.com/public/9/a/8/9a83c527-89ce-4981-b08b-46d49d7710b4_large/confident-professional-woman-stockcake.jpg" alt="images" width= "220px" height= "250px"/>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore reiciendis, quisquam facilis consectetur molestias voluptate eaque sed fugiat voluptas quod, possimus tempora enim ipsum iste distinctio iusto veritatis dignissimos!</p>
+            </div>
+        );
+
+        ReactDOM.render(div , document.querySelector("body"));
+    </script>
+</body>
+
+</html>

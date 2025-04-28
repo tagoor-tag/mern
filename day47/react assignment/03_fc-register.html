@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment03</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        /* Container for the form */
+        #registerform {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        /* Style for the input fields */
+        #registerform input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Style for the button */
+        #registerform button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #registerform button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function RegisterForm() {
+            return (
+                <div id="registerform">
+                    <form action="">
+                        <input type="text" placeholder="Enter Your username"  />
+                        <input type="email" placeholder="Enter your Email"  />
+                        <input type="number" placeholder="Enter Your Phone number"  />
+                        <input type="password" placeholder="Enter Your Password"  />
+                        <input type="password" placeholder="Conform Your Password"  />
+                        <button>Register</button>
+                    </form>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<RegisterForm/>, document.querySelector("body"))
+    </script>
+</body>
+
+</html>

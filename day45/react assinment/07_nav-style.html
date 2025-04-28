@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <script type="text/babel">
+        var nav = ( <nav style ={{display : "flex" ,backgroundColor: "black" ,color : "orange" ,justifyContent : "space-around", alignItems : "center"}}>
+            <h1>Wellcome</h1>
+            <ul type = "none" style ={{display : "flex" ,gap: "20px"  }}>
+                <li><a href="#home" style ={{textDecoration: "none" , color : "white"}}>Home</a></li>
+                <li><a href="#about" style ={{textDecoration: "none" , color : "white" }}>About</a></li>
+                <li><a href="#contact" style ={{textDecoration: "none" , color : "white"}}>Contact</a></li>
+                <li><a href="#services" style ={{textDecoration: "none" , color : "white"}}>Services</a></li>
+                </ul>
+            </nav>
+        );
+
+        ReactDOM.render( nav, document.querySelector("body"));
+    </script>
+</body>
+
+</html>

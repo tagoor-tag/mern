@@ -1,0 +1,35 @@
+<!-- create male img to mouse enter it will female img and it leave back again male -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function changeContent() {
+            //code
+            var h2DomElement = document.querySelector("#h2");
+            h2DomElement.innerText = "JS is super easy";
+            h2DomElement.style.color = "red";
+            h2DomElement.style.fontFamily = "cursive";
+        }
+
+        function fnBlue() {
+            var h2DomElement = document.querySelector("#h2");
+            h2DomElement.style.color = "blue";
+        }
+
+        function fnnormal() {
+            var h2DomElement = document.querySelector("#h2");
+            h2DomElement.style.color = "red";
+        }
+    </script>
+</head>
+
+<body>
+    <h2 id="h2" onmouseenter="fnBlue()" onmouseleave="fnnormal()">QuerySlector</h2>
+    <input type="text" placeholder="enter text">
+    <button onclick="changeContent()">Submit</button>
+</body>
+
+</html>

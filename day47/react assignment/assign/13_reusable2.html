@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment05</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        main {
+            width: 48%;
+            height: 40%;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        main .img-side {
+            width: 30%;
+            height: 100%;
+            height: max-content;
+        }
+
+        main .img-side .mainImg {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        main .detail-side {
+            padding: 10px;
+            width: 70%;
+        }
+
+        main .detail-side .detail,
+        .button,
+        .address {
+            display: flex;
+            justify-content: space-between
+        }
+
+        main .detail-side .review {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        main .detail-side .review .secondImg {
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function Header() {
+            <header>
+                <h1>Featured Property For Sale </h1>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+            </header>
+
+        }
+
+        function Main(props) {
+            return (
+
+                <main>
+                    <div class="img-side">
+                        <img src={props.url} alt="img" class="mainImg" />
+                    </div>
+                    <div class="detail-side">
+                        <label>{props.for}</label>
+
+                        <div class="detail">
+                            <h1>{props.prName}</h1>
+                            <h1 class="h12">{props.price} </h1>
+
+                        </div>
+
+                        <div class="review">
+                            <img src={props.rating} alt="rating" class="secondImg" />
+                            <p>{props.review}</p>
+                        </div>
+
+                        <div class="button">
+                            <p><i class="bi bi-house-fill"></i> {props.flat}</p>
+                            <p><i class="bi bi-house-fill"> </i> {props.beds}</p>
+                            <p><i class="bi bi-dpad"></i>{props.sqt} </p>
+                        </div>
+
+                        <div class="address">
+                            <p id="p1"><i class="bi bi-geo-alt-fill"></i>{props.address}</p>
+
+                            <button>{props.btn}</button>
+
+                        </div>
+
+                    </div>
+                </main>
+            )
+        }
+
+        function Footer() {
+            return (
+                <footer>
+                    <button>Browse More Properties</button>
+                </footer>
+            )
+        }
+
+        function Call() {
+            return (
+                <div>
+                    <Header />
+
+                    <Main url={"https://media.designcafe.com/wp-content/uploads/2022/07/15170350/luxury-home-design-on-budget.jpg"}
+                        for={"For Rent"}
+                        prName={"The Green Canton chrysler"}
+                        price={"$80,000"}
+                        rating={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1WvHa77Ib9WFdn-WrXlTq-6ikmYhkzvy8Q&s"}
+                        review={"(42 Reviews)"}
+                        flat={"3BHK"}
+                        beds={"3Beds"}
+                        sqt={"1800 SQFT"}
+                        address={"210 Zirak Road, Canada"}
+                        btn={"View"} />
+
+                    <Main url={"https://media.designcafe.com/wp-content/uploads/2020/07/23205856/home-interior-design-ideas.jpg"}
+                        for={"For Sell"}
+                        prName={"Purple Flatiron House"}
+                        price={"$67,000"}
+                        rating={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1WvHa77Ib9WFdn-WrXlTq-6ikmYhkzvy8Q&s"}
+                        review={"(42 Reviews)"}
+                        flat={"3BHK"}
+                        beds={"3Beds"}
+                        sqt={"1800SQFt"}
+                        address={"210 Zirak Road, Canada"}
+                        btn={"View"} />
+
+                    <Main url={"https://media.designcafe.com/wp-content/uploads/2022/07/15170350/luxury-home-design-on-budget.jpg"}
+                        for={"For Rent"}
+                        prName={"The Green Canton chrysler"}
+                        price={"$80,000"}
+                        rating={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1WvHa77Ib9WFdn-WrXlTq-6ikmYhkzvy8Q&s"}
+                        review={"(42 Reviews)"}
+                        flat={"3BHK"}
+                        beds={"3Beds"}
+                        sqt={"1800 SQFT"}
+                        address={"210 Zirak Road, Canada"}
+                        btn={"View"} />
+
+                    <Main url={"https://media.designcafe.com/wp-content/uploads/2020/07/23205856/home-interior-design-ideas.jpg"}
+                        for={"For Sell"}
+                        prName={"Purple Flatiron House"}
+                        price={"$67,000"}
+                        rating={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1WvHa77Ib9WFdn-WrXlTq-6ikmYhkzvy8Q&s"}
+                        review={"(42 Reviews)"}
+                        flat={"3BHK"}
+                        beds={"3Beds"}
+                        sqt={"1800SQFt"}
+                        address={"210 Zirak Road, Canada"}
+                        btn={"View"} />
+
+                    <Footer />
+                </div>
+            )
+        }
+
+        ReactDOM.render(<Call />, document.querySelector("body"))
+    </script>
+</body>
+
+
+</html>

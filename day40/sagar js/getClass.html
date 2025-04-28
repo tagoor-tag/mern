@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function getDomElements(){
+            var collection = document.getElementsByTagName("h3");
+            console.log(collection);
+            
+            for(let element of collection){
+                element.style.color = "red";
+            }
+
+        }
+        
+        // {
+        //     var collection = document.getElementsByClassName("heading");
+        //     console.log(collection);
+            
+        //     for(let element of collection){
+        //         element.style.color = "red";
+        //     }
+
+        // }
+        
+        // {
+        //     var pDom = document.getElementById("content");
+
+        //     console.log(pDom);
+        //     console.log("-----------------------------------------");
+            
+        //     var domCollection =  document.getElementsByClassName("heading");
+        //     var h2DomElement = domCollection;
+        //     h2DomElement.style.color = "red";           
+
+        // }
+
+    </script>
+
+</head>
+<body>
+    <h2 class="heading">DOM Manipulation</h2>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi quae odit at, totam ipsam magnam quasi deserunt sed molestiae itaque consectetur numquam error aliquam ipsum consequatur vel voluptatum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur minima. Vel deserunt numquam nisi cumque tempora, ducimus suscipit voluptates neque et sint. Odit, doloremque earum labore ipsam ut neque?
+    </p>
+
+    <button onclick="getDomElements()">Submit</button>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.nav-main{
+    display: flex;
+    margin: 10px;
+}
+.nav-name{
+    display: flex;
+}
+.nav-buttons{
+    display: flex;
+}
+.nav-list{
+    display: flex;
+    margin: 10px;
+}
+li{
+    margin: 10px;
+}
+#but1{
+    width: fit-content;
+    height: 10px;
+    
+}

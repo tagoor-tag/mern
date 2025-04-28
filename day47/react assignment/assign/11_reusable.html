@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment05</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+
+        .body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+
+        header {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        header .img-side {
+            width: 30%;
+            height: fit-content;
+        }
+
+        header .img-side .mainImg {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        header .detail-side {
+            padding: 10px;
+            width: 70%;
+        }
+
+        header .detail-side .detail,.button,.address{
+            display: flex;
+            justify-content: space-between
+        }
+
+        header .detail-side .review{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .detail-side .review .secondImg{
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function Header(props) {
+            return (
+                <header>
+                    <div class="img-side">
+                        <img src={props.url} alt="img" class="mainImg" />
+                    </div>
+                    <div class="detail-side">
+                        <label>{props.for}</label>
+
+                        <div class="detail">
+                            <h1>{props.prName}</h1>
+                            <h1 class="h12">{props.price} </h1>
+
+                        </div>
+
+                        <div class="review">
+                            <img src={props.rating} alt="rating" class="secondImg" />
+                            <p>{props.review}</p>
+                        </div>
+
+                        <div class="button">
+                            <p><i class="bi bi-house-fill"></i> {props.flat}</p>
+                            <p><i class="bi bi-house-fill"> </i> {props.beds}</p>
+                            <p><i class="bi bi-dpad"></i>{props.sqt} </p>
+                        </div>
+
+                        <div class="address">
+                            <p id="p1"><i class="bi bi-geo-alt-fill"></i>{props.address}</p>
+
+                            <button>{props.btn}</button>
+
+                        </div>
+
+                    </div>
+                </header>
+            );
+        }
+
+
+        function Call() {
+            return (
+                <div class="body">
+
+                    <Header url={"https://media.designcafe.com/wp-content/uploads/2022/07/15170350/luxury-home-design-on-budget.jpg"}
+                        for={"For Rent"}
+                        prName={"The Green Canton chrysler"}
+                        price={"$80,000"}
+                        rating={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1WvHa77Ib9WFdn-WrXlTq-6ikmYhkzvy8Q&s"}
+                        review={"(42 Reviews)"}
+                        flat={"3BHK"}
+                        beds={"3Beds"}
+                        sqt={"1800 SQFT"}
+                        address={"210 Zirak Road, Canada"}
+                        btn={"View"} />
+
+                    <Header url={"https://media.designcafe.com/wp-content/uploads/2020/07/23205856/home-interior-design-ideas.jpg"}
+                        for={"For Sell"}
+                        prName={"Purple Flatiron House"}
+                        price={"$67,000"}
+                        rating={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1WvHa77Ib9WFdn-WrXlTq-6ikmYhkzvy8Q&s"}
+                        review={"(42 Reviews)"}
+                        flat={"3BHK"}
+                        beds={"3Beds"}
+                        sqt={"1800SQFt"}
+                        address={"210 Zirak Road, Canada"}
+                        btn={"View"} />
+                </div>
+
+            );
+
+        }
+
+        ReactDOM.render(<Call />, document.querySelector("body"))
+    </script>
+</body>
+
+</html>

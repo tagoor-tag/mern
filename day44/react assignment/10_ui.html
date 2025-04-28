@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <script>
+        var ui = React.createElement("div",null, [
+            React.createElement("img",{src: "https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90", alt: "img",width: "500", height: "300"}),
+            React.createElement("h3",null,"Missing cart Items?"),
+            React.createElement("p",null,"Login to see the items you added previously"),
+            React.createElement("button",null,"Login")
+        ])
+
+        ReactDOM.render(ui, document.querySelector("body"))
+    </script>
+</body>
+
+</html>

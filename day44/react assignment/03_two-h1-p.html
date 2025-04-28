@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        
+    </div>
+    <script>
+        var h1 = React.createElement("h1",null, "Heading");
+        var p1 = React.createElement("p",null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laboriosam quam excepturi inventore aspernatur odio soluta, assumenda, labore asperiores dicta rem ducimus voluptatibus iusto sequi veritatis minima sunt saepe repudiandae?");
+        var p2 = React.createElement("p",null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laboriosam quam excepturi inventore aspernatur odio soluta, assumenda, labore asperiores dicta rem ducimus voluptatibus iusto sequi veritatis minima sunt saepe repudiandae?");
+
+        ReactDOM.render([h1,p1,p2], document.getElementById("root"))
+    </script>
+</body>
+
+</html>

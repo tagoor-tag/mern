@@ -1,0 +1,66 @@
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+body{
+    width: 99vw;
+    height: 99vh;
+    /* overflow: hidden; */
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 216, 189);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+header {
+    width: 100%;
+    
+}
+header h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.qualities{
+    margin-top: 5%;
+    padding: 30px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    font-size: 30px;
+}
+
+.bests{
+    width: 50%;
+}
+
+.services{
+    width: 50%;
+}
+
+.bests h3, .services h3{
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+#creats{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creats{
+    background-color: #fff;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.creats h1, .creats p{
+    padding: 20px;
+}

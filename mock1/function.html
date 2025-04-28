@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <script type="text/babel">
+        function OlItems() {
+
+            return (
+                <ol>
+                    <li>ReactJs</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                    <li>bootstrap</li>
+                    </ol>
+            );
+        }
+        function UlItems() {
+            return (
+                <ul>
+                    <li>RRR</li>
+                    <li>KGF</li>
+                    <li>Bahubali</li>
+                    <li>Salar</li>
+                    <li>Pushpa 2</li>
+                    </ul>
+            );
+        }
+
+        ReactDOM.render([<OlItems/>,<UlItems/>],document.querySelector("body"))
+    </script>
+</body>
+
+</html>

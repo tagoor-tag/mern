@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styling */
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  #container {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group Styling */
+  .fromgroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fromgroup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .fromgroup input:focus {
+    border-color: #007bff;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .radioone {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .radioone div {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Button Styling */
+  .submitone input {
+    padding: 12px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitone input:hover {
+    background-color: #0056b3;
+  }
+  
+  .submitone input:active {
+    background-color: #00408d;
+  }
+  
+  /* Placeholder Text Styling */
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    #container {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  

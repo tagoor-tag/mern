@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    
+    <script type="text/babel">
+        var table = <table border = "1" style = {{borderCollapse: "collapse"}}>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raghu</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>Suresh</td>
+                        <td>102</td>
+                    </tr>
+                    <tr>
+                        <td>Raju</td>
+                        <td>103</td>
+                    </tr>
+                    </tbody>
+            
+            </table>
+
+        ReactDOM.render(table , document.querySelector("body"));
+    </script>
+</body>
+
+</html>

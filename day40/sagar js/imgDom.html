@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function createDiv() {
+            var imgDomElement = document.createElement("img");
+
+            imgDomElement.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmVzc2lvbmFsfGVufDB8fDB8fHww";
+            imgDomElement.width = "200";
+            imgDomElement.height = "300";
+
+            var bodyDomElement = document.querySelector("body");
+
+            bodyDomElement.appendChild(imgDomElement);
+        }
+    </script>
+</head>
+
+<body>
+    <h2 class="heading">DOM Manipulation</h2>
+    <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi quae odit at, totam ipsam magnam quasi
+        deserunt sed molestiae itaque consectetur numquam error aliquam ipsum consequatur vel voluptatum magni. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur minima. Vel deserunt numquam nisi cumque
+        tempora, ducimus suscipit voluptates neque et sint. Odit, doloremque earum labore ipsam ut neque?
+    </p>
+
+    <button onclick="createDiv()">Submit</button>
+
+</body>
+
+</html>

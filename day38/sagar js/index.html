@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        //Js Code 
+        function changeH2Content(){
+            //1.h2 dom element
+            var h2Domelement = document.querySelector("h2");
+            var pDomelement = document.querySelector("p");
+            var btnDomelement = document.querySelector("button");
+
+            h2Domelement.innerText = "Dom Manipulation"; 
+            pDomelement.innerText = "para is update"; 
+        }
+    </script>
+</head>
+<body>
+    <h2>Document Object Model</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse at fuga pariatur doloremque veritatis beatae a, accusamus voluptatum, facere eius cum voluptatibus sed placeat commodi voluptas inventore adipisci fugiat, nulla rem explicabo cupiditate ducimus saepe. Quo voluptatibus beatae a perferendis reprehenderit atque voluptate alias! Accusantium fugit temporibus beatae delectus architecto, totam iure dicta consequatur ratione! Omnis est amet voluptate nobis error hic vel enim autem consequuntur perferendis iure vitae corrupti esse, officiis optio asperiores repellendus deserunt inventore odio reprehenderit consectetur ducimus delectus blanditiis! Quam deserunt ullam nam ipsam placeat repellendus consequatur aperiam voluptas adipisci quidem, maiores aliquid, vero, unde sunt!</p>
+    <button onclick="changeH2Content()">Change content</button>
+</body>
+</html>

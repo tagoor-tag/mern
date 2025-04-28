@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment02</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+         /* Container for the form */
+         #login-form {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background-color: #f9f9f9;
+        }
+
+        /* Style for the labels */
+        #login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        /* Style for the input fields */
+        #login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Style for the button */
+        #login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #login-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script type="text/babel">
+        function LoginForm() {
+            return (
+                <div id="login-form">
+                    <form action="">
+                        <label for="username">User Name:</label>
+                        <input type="text" placeholder="username" name="username" />
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="password" name="password" />
+                        <button for="login">Login</button>
+                    </form>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<LoginForm/>, document.querySelector("body"))
+    </script>
+</body>
+
+</html>
