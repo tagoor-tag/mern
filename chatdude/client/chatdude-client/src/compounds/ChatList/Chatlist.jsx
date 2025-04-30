@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import "./Chatlist.css";
 import { createChat } from '../../services/apiCalls/chat';
+import { useSelector } from 'react-redux';
 
 function Chatlist(props) {
 
@@ -18,6 +19,7 @@ function Chatlist(props) {
       alert("Failed to start chat");
     }
   };
+
 
 
   return (

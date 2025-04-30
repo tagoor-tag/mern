@@ -129,6 +129,6 @@ route.get("/get-all",verifyToken,async(req,res)=>{
       message:'Something went wrong'
     })
   }
-})
+})//http://localhost:1010/api/users/get-all
 
 module.exports = route;

@@ -1,4 +1,9 @@
 export let userAction = {
-    type: "user",
-    payload: [],
-  };
+  type: "LoginUser",
+  payload: [],
+};
+
+export let chatListAction = {
+  type: "chatlist",
+  payload: [],
+};

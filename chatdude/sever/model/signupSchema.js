@@ -1,11 +1,11 @@
 var mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
-  first: {
+  firstname: {
     type: String,
     required: true,
   },
-  last: {
+  lastname: {
     type: String,
     required: true,
   },
@@ -29,10 +29,14 @@ const UserSchema = new mongoose.Schema({
     required: true,
     minLength: 8,
   },
+  image:{
+    type : String,
+    required: true,
+  }
 });
 
 
-const User = mongoose.model("signups", UserSchema);
+const User = mongoose.model("users", UserSchema);
 
 
 module.exports = User;

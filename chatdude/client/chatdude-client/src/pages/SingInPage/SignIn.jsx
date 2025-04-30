@@ -20,7 +20,7 @@ function SignIn() {
 
         axios.post("http://localhost:1010/api/users/signin", user)
             .then((res) => {
-                console.log(res.data)
+                // console.log(res.data)
                 let dbuser = res.data.results
 
                 if (user.email === dbuser.email && user.password === dbuser.password) {

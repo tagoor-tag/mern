@@ -7,10 +7,8 @@ function Header() {
 
   
 const user = useSelector((state)=>{
-  return state
+  return state.userReducer.user
 })
-
-console.log(user)
   
   const navigate = useNavigate();
   return (
@@ -21,8 +19,8 @@ console.log(user)
 
       </div>
       <div id="header-profile">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/029/271/062/small/avatar-profile-icon-in-flat-style-male-user-profile-illustration-on-isolated-background-man-profile-sign-business-concept-vector.jpg" alt="" id='header-profile-img'/>
-        <h4>{user.first}</h4>
+        <img src={!user || user.image} alt="user_img" id='header-profile-img'/>
+        <h4>{!user || user.firstname}</h4>
         <button onClick={()=>{ 
           localStorage.removeItem("Token") 
           navigate('/')}}><i class="bi bi-power"></i></button>
